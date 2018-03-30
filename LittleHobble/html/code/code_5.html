@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每个人都有点小梦想</title>
+    <link rel="SHORTCUT ICON" href="../../Image/web_logo.ico" />
+    <script src="../../JavaScript/jquery-3.1.1.min.js"></script>
+    <link href="../../Css/bootstrap.css" rel="stylesheet" />
+    <link href="../../Css/html/move.css" rel="stylesheet" />
+    <script src="../../JavaScript/bootstrap.js"></script>
+    <script src="../../JavaScript/html/move.js"></script>
+    <script src="../../JavaScript/run_prettify.js"></script>
+</head>
+<body>
+    <nav class="navbar-inverse" role="navigation" style="background-color: #393a44;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html" style="color: #fff;">little hobby</a>
+            <!--<a class="navbar-brand" href="#"><img class="img-responsive" src="image/little hobby.png" /></a>-->
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="code_title.html" style="color: #fff;">代码</a></li>
+                <li><a href="#contact" style="color: #fff;">音乐</a></li>
+                <li><a href="../move/move_title.html" style="color: #fff;">电影</a></li>
+                <li class="dropdown" style="color: #fff;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #fff;">更多<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">代码技巧</a></li>
+                        <li class="divider">这是一条分割线</li>
+                        <li><a href="#">最新文章</a></li>
+                        <li><a href="#">关于我</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--导航栏部分完成-->
+    <!--    <div class="box" style="width: 100%; height: 100%; margin-top: -5%;">-->
+    <div class="col-lg-12 col-md-12 col-sm-12" style="background-image: url(../../Image/code/语言背景图/Cshap.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;" id="img">
+        <!--<img class="img-responsive" src="image/IMG_2718-1200x800.jpg" style="width:100%;height:70%;" />-->
+        <div id="glass"></div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 container" style="background-color: #f9f9f9; height: 90px;">
+        <div class="col-lg-4 col-lg-offset-4 container">
+            <img class="img-circle" src="../../Image/code/文章5/鲍老师.jpg" style="width: 45px; height: 45px; margin-top: 20px;" />
+            <img src="../../Image/作者.png" style="margin-left: 20px;" />
+            <span style="margin-left: 20px; font-weight: bold;">鲍老师</span>
+            <p style="margin-left: 70px; margin-top: -15px;">来源：qq空间</p>
+        </div>
+    </div>
+    <!--左边推荐栏-->
+    <div class="col-lg-2 col-md-2 visible-lg" style="margin-top: 40px; border-right: 1px solid #dddddd;" id="list">
+        <h2>其他推荐</h2>
+        <p class="text-capitalize" style="border-top:1px dotted #888888;">
+                <div style="height:10px;"></div>
+                <a href="code_1.html" style="text-decoration:none;color:#888888;font-size:16px;">解决delete 删除sql语句，标识还保留删除之前的问题</a><br/>
+                <div style="color:#c1cbdd;">2017-3-31</div>
+            </p>
+            <p class="text-capitalize" style="border-top:1px dotted #888888;">
+                <div style="height:10px;"></div>
+                <a href="code_2.html" style="text-decoration:none;color:#888888;font-size:16px";>C# 几种数据类型转换方式</a><br/>
+                <div style="color:#c1cbdd;">2017-3-31</div>
+            </p>
+            <p class="text-capitalize" style="border-top:1px dotted #888888;">
+                <div style="height:10px;"></div>
+                <a href="code_3.html" style="text-decoration:none;color:#888888;font-size:16px";>将DataTable数据转换成List泛型数据</a><br/>
+                <div style="color:#c1cbdd;">2017-3-31</div>
+            </p>
+            <p class="text-capitalize" style="border-top:1px dotted #888888;">
+                <div style="height:10px;"></div>
+                <a href="code_4.html" style="text-decoration:none;color:#888888;font-size:16px";>winform 导出datagridview 到excel</a><br/>
+                <div style="color:#c1cbdd;">2017-3-31</div>
+            </p>
+    </div>
+    <!--左边推荐栏完成-->
+    <div class="col-lg-10 col-md-10">
+        <div class="page-header" style="text-align: center;">
+            <h1>MVC+knocKout.js 实现下拉框级联
+                   <!-- <small style="padding-left:40px;">无名</small>-->
+            </h1>
+
+        </div>
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8" style="overflow-y: scroll;" id="article">
+            <p>
+                数据库：部门表和员工表
+            </p>
+            <img src="../../Image/code/文章5/文章5_1.png" /><br />
+            <img src="../../Image/code/文章5/文章5_2.png" />
+            <pre class="prettyprint">
+                在控制器里面的操作：
+                public ActionResult Index3()
+                        {
+                            ViewBag.departments = new SelectList(getDepartments(),"d_id","d_name");//部门数据
+                            return View();
+                        }
+                
+                        private List&lt;department&gt; getDepartments()
+                        {
+                            List&lt;department&gt; list = db.department.ToList();
+                            return list;
+                        }
+                
+                        public JsonResult GetEmployye(int departmentId)
+                        {
+                           //通过部门id，获取该部门的员工
+                              var list= db.employee.Where(a => a.e_d_id == departmentId).ToList().Select(a => new SelectListItem(){Text = a.e_name,Value = a.e_id+""});
+                
+                            
+                            return Json(list,JsonRequestBehavior.AllowGet);
+                        }
+                html里面的实现：
+                @{
+                    Layout = null;
+                }
+                
+                &lt;!DOCTYPE html&gt;
+                
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;meta name="viewport" content="width=device-width" /&gt;
+                    &lt;script src="~/Scripts/jquery-1.8.2.min.js"&gt;&lt;/script&gt;
+                    &lt;script src="~/Scripts/knockout-2.2.0.debug.js"&gt;&lt;/script&gt;
+                    &lt;title>Index3&lt;/title&gt;
+                &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;div&gt;
+                            &lt;p&gt;选择部门：@Html.DropDownList("department",ViewBag.departments as SelectList,"请选择",new{onchange="searchEmployee();"})
+                            &lt;/p&gt;
+                            &lt;p data-bind="visible: selectOptions().length > 0">&lt;/p&gt;
+                            &lt;b style="color:#0094ff">员工：&lt;/b&gt;
+                            &lt;select data-bind="options: selectOptions, optionsText: 'Text', optionsValue: 'Value', optionsCaption: '请选择'"&gt;&lt;/select&gt;
+                        &lt;/&lt;div&gt;
+                    &lt;/body&gt;
+                    &lt;script type="text/javascript"&gt;
+                        function ViewModel() {
+                            this.selectOptions = ko.observableArray([]);
+                
+                        }
+                
+                        var vm = new ViewModel();
+                        ko.applyBindings(vm);
+                
+                        function searchEmployee() {
+                            var id = $("#department").val();
+                            $.getJSON(
+                                "@Url.Action("GetEmployye")",
+                        { departmentId: id },
+                        function (data) {
+                            vm.selectOptions(data);
+                        });
+                        }
+                    &lt;/script&gt;
+                &lt;/html&gt;
+            </pre>
+            <img src="../../Image/code/文章5/文章5_3.png" />
+            <div style="height: 200px;">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

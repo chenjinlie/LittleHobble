@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6AE91525-693D-49A2-AABB-64BE5D25A093}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LittleHobble</RootNamespace>
+    <AssemblyName>LittleHobble</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Article.aspx" />
+    <Content Include="Code.aspx" />
+    <Content Include="article_ceshi.html" />
+    <Content Include="Css\bootstrap.css" />
+    <Content Include="Css\Button.css" />
+    <Content Include="Css\html\move.css" />
+    <Content Include="Css\html\move_title.css" />
+    <Content Include="Css\Index.css" />
+    <Content Include="Css\tranquil-heart.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="html\code\code_1.html" />
+    <Content Include="html\code\code_2.html" />
+    <Content Include="html\code\code_3.html" />
+    <Content Include="html\code\code_4.html" />
+    <Content Include="html\code\code_5.html" />
+    <Content Include="html\code\code_title.html" />
+    <Content Include="html\move\Guardians of the Galaxy.html" />
+    <Content Include="html\move\La La Land.html" />
+    <Content Include="html\move\Logan.html" />
+    <Content Include="html\move\Miss Peregrine%27s.html" />
+    <Content Include="html\move\move_title.html" />
+    <Content Include="html\move\Sing.html" />
+    <Content Include="Image\7730-1502041T520.jpg" />
+    <Content Include="Image\bg7_0.png" />
+    <Content Include="Image\code\IMG_2718-1200x800.jpg" />
+    <Content Include="Image\code\IMG_3867-1200x800.jpg" />
+    <Content Include="Image\code\IMG_4053-1200x800.jpg" />
+    <Content Include="Image\code\IMG_4124-1200x800.jpg" />
+    <Content Include="Image\code\IMG_8263-1200x800.jpg" />
+    <Content Include="Image\code\IMG_9955-1200x800.jpg" />
+    <Content Include="Image\code\文章1\文章1_1.png" />
+    <Content Include="Image\code\文章1\文章1_2.png" />
+    <Content Include="Image\code\文章1\文章1_3.png" />
+    <Content Include="Image\code\文章5\文章5_1.png" />
+    <Content Include="Image\code\文章5\文章5_2.png" />
+    <Content Include="Image\code\文章5\文章5_3.png" />
+    <Content Include="Image\code\文章5\鲍老师.jpg" />
+    <Content Include="Image\code\language_bg\Cshap.jpg" />
+    <Content Include="Image\code\language_bg\sqlserver.jpg" />
+    <Content Include="Image\home_bk_7.8b2d29b4.jpg" />
+    <Content Include="Image\little hobby.png" />
+    <Content Include="Image\move\Guardians_of_the_Galaxy_bg.jpeg" />
+    <Content Include="Image\move\logan_bg-img.jpg" />
+    <Content Include="Image\move\logan_title.jpg" />
+    <Content Include="Image\move\logan_Vamei.jpg" />
+    <Content Include="Image\move\Miss Peregrine%27s_bg-img_title.jpg" />
+    <Content Include="Image\move\Miss Peregrine%27s_远方.jpg" />
+    <Content Include="Image\move\Miss_bg-img.jpg" />
+    <Content Include="Image\move\move_La La Land.jpeg" />
+    <Content Include="Image\move\sing_bg-image.jpg" />
+    <Content Include="Image\move\sing_白将墨.jpg" />
+    <Content Include="Image\move\timg.jpg" />
+    <Content Include="Image\move\ul34347136-6.jpg" />
+    <Content Include="Image\move\yhhwd2.jpg" />
+    <Content Include="Image\move\作者O%28∩_∩%29O~AJ.jpg" />
+    <Content Include="Image\video_content_text.png" />
+    <Content Include="Image\video_content_text2.png" />
+    <Content Include="Image\web_logo.ico" />
+    <Content Include="Image\个人图片.PNG" />
+    <Content Include="Image\作者.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="index.html" />
+    <Content Include="JavaScript\bootstrap.js" />
+    <Content Include="JavaScript\bootstrap.min.js" />
+    <Content Include="JavaScript\Button.js" />
+    <Content Include="JavaScript\html\move.js" />
+    <Content Include="JavaScript\html\move_title.js" />
+    <Content Include="JavaScript\index.js" />
+    <Content Include="JavaScript\JavaScript.js" />
+    <Content Include="JavaScript\jquery-3.1.1.min.js" />
+    <Content Include="JavaScript\run_prettify.js" />
+    <Content Include="JavaScript\vs2015.css" />
+    <Content Include="Move_cheshi.aspx" />
+    <Content Include="Video\14986116-1-hd.mp4" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Move.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Article.aspx.cs">
+      <DependentUpon>Article.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Article.aspx.designer.cs">
+      <DependentUpon>Article.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ashx\Article.ashx.cs">
+      <DependentUpon>Article.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Code.aspx.cs">
+      <DependentUpon>Code.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code.aspx.designer.cs">
+      <DependentUpon>Code.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Move_cheshi.aspx.cs">
+      <DependentUpon>Move_cheshi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Move_cheshi.aspx.designer.cs">
+      <DependentUpon>Move_cheshi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="title.Master.cs">
+      <DependentUpon>title.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="title.Master.designer.cs">
+      <DependentUpon>title.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Move.aspx.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Move.aspx.designer.cs">
+      <DependentUpon>Move.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Image\Web.config" />
+    <Content Include="title.Master" />
+    <Content Include="ashx\Article.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="html\music\" />
+    <Folder Include="Image\music\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2354/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

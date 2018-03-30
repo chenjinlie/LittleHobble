@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>每个人都有点小梦想</title>
+    <link rel="SHORTCUT ICON" href="../../Image/web_logo.ico" />
+    <script src="../../JavaScript/jquery-3.1.1.min.js"></script>
+    <link href="../../Css/bootstrap.css" rel="stylesheet" />
+    <link href="../../Css/html/move.css" rel="stylesheet" />
+    <script src="../../JavaScript/bootstrap.js"></script>
+    <script src="../../JavaScript/html/move.js"></script>
+    <script type="text/javascript">
+        $(function () {
+                var url = window.location.search; //获取url中"?" 符后的字符串，包括"?";
+                var num = url.indexOf("?");
+                url = url.substr(num + 1); //得到"?"之后的字符串
+
+                //var arr = str.split("&"); //得到&分割的参数，放入数组中
+            $.ajax({
+                url: '../ashx/Article.ashx',
+                type: 'POST',
+                data: {
+                    id:url
+                },
+                success: function (ccc) {
+                    ccc = ccc.substring(1, ccc.length - 1);
+                    console.log(ccc);
+                    $("#article_box").html(ccc);
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <nav class="navbar-inverse" role="navigation" style="background-color: #393a44;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html" style="color: #fff;">little hobby</a>
+            <!--<a class="navbar-brand" href="#"><img class="img-responsive" src="image/little hobby.png" /></a>-->
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="code_title.html" style="color: #fff;">代码</a></li>
+                <li><a href="#contact" style="color: #fff;">音乐</a></li>
+                <li><a href="../move/move_title.html" style="color: #fff;">电影</a></li>
+                <li class="dropdown" style="color: #fff;">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #fff;">更多<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">代码技巧</a></li>
+                        <li class="divider">这是一条分割线</li>
+                        <li><a href="#">最新文章</a></li>
+                        <li><a href="#">关于我</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--导航栏部分完成-->
+    <!--    <div class="box" style="width: 100%; height: 100%; margin-top: -5%;">-->
+    <div class="col-lg-12 col-md-12 col-sm-12" style="background-image: url(../../Image/code/IMG_2718-1200x800.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;" id="img">
+        <!--<img class="img-responsive" src="image/IMG_2718-1200x800.jpg" style="width:100%;height:70%;" />-->
+        <div id="glass"></div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 container" style="background-color: #f9f9f9; height: 90px;">
+        <div class="col-lg-4 col-lg-offset-4 container">
+            <img class="img-circle" src="../../Image/个人图片.PNG" style="width: 45px; height: 45px; margin-top: 20px;" />
+            <img src="../../Image/作者.png" style="margin-left: 20px;" />
+            <span style="margin-left: 20px; font-weight: bold;">陈锦烈</span>
+            <p style="margin-left: 70px; margin-top: -15px;">来源：自述</p>
+        </div>
+    </div>
+    <!--左边推荐栏-->
+    <div class="col-lg-2 col-md-2 visible-lg" style="margin-top: 40px; border-right: 1px solid #dddddd;" id="list">
+                        <h2>其他推荐</h2>
+            <p class="text-capitalize" style="border-top:1px dotted #888888;">
+                <div style="height:10px;"></div>
+                <a href="code_1.html" style="text-decoration:none;color:#888888;font-size:16px;">解决delete 删除sql语句，标识还保留删除之前的问题</a><br/>
+                <div style="color:#c1cbdd;">2017-3-31</div>
+            </p>
+            <p class="text-capitalize" style="border-top:1px dotted #888888;">
+                <div style="height:10px;"></div>
+                <a href="code_2.html" style="text-decoration:none;color:#888888;font-size:16px";>C# 几种数据类型转换方式</a><br/>
+                <div style="color:#c1cbdd;">2017-3-31</div>
+            </p>
+            <p class="text-capitalize" style="border-top:1px dotted #888888;">
+                <div style="height:10px;"></div>
+                <a href="code_3.html" style="text-decoration:none;color:#888888;font-size:16px";>将DataTable数据转换成List泛型数据</a><br/>
+                <div style="color:#c1cbdd;">2017-3-31</div>
+            </p>
+            <p class="text-capitalize" style="border-top:1px dotted #888888;">
+                <div style="height:10px;"></div>
+                <a href="code_4.html" style="text-decoration:none;color:#888888;font-size:16px";>winform 导出datagridview 到excel</a><br/>
+                <div style="color:#c1cbdd;">2017-3-31</div>
+            </p>
+    </div>
+    <!--左边推荐栏完成-->
+    <div id="article_box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="title.master.cs" Inherits="LittleHobble.title" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>每个人都有点小梦想</title>
+    <link rel="SHORTCUT ICON" href="Image/web_logo.ico" />
+    <script src="JavaScript/jquery-3.1.1.min.js"></script>
+    <link href="Css/bootstrap.css" rel="stylesheet" />
+    <link href="Css/html/move_title.css" rel="stylesheet" />
+    <script src="JavaScript/bootstrap.js"></script>
+    <script src="JavaScript/html/move_title.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <%-----------------------------------------导航栏-------------------------------------------------%>
+         <!--导航栏-->
+        <nav class="navbar-inverse" role="navigation" style="background-color: #393a44;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.aspx" style="color: #fff;">little hobby</a>
+                <!--<a class="navbar-brand" href="#"><img class="img-responsive" src="image/little hobby.png" /></a>-->
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Code.aspx" style="color: #fff;">代码</a></li>
+                    <li><a href="#contact" style="color: #fff;">音乐</a></li>
+                    <li><a href="move.aspx" style="color: #fff;">电影</a></li>
+                    <li class="dropdown" style="color: #fff;">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #fff;">更多<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">代码技巧</a></li>
+                            <li class="divider">这是一条分割线</li>
+                            <li><a href="#">最新文章</a></li>
+                            <li><a href="#">关于我</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--导航栏部分完成-->
+
+        <%-----------------------------------------内容页面-------------------------------------------------%>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

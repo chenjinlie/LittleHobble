@@ -1,0 +1,312 @@
+﻿        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        body {
+            font-size: 13px;
+            line-height: 1.5;
+            /*   min-width:750px;
+            width:expression_r(document.clientWidth<750px?"750px":"auto");
+            min-height:400px;
+            height:expression_r(document.clientHeight<750px?"400px":"auto"); */
+        }
+        /*头部*/
+        #top_box {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -100;
+            overflow: hidden;
+        }
+        /*logo*/
+        #logo {
+            position: absolute;
+            z-index: 1000;
+            width: 142px;
+            height: 47px;
+        }
+        
+        #Navigation {
+            background-color:#000;
+            position:fixed;
+            z-index:5;
+            width:100%;
+            height:54px;
+            display:none;
+        }
+        /*头部超链接样式*/
+        .code {
+            float:right;
+            color:white;
+            text-decoration:none;
+            transition:1.0s;
+            padding-right:30px;
+            line-height:54px;
+            font-size:14px;
+        }
+            .code:hover {
+                color:#808080;
+            }
+
+        /*视频样式*/
+        #video {
+            width: 100%;
+            left: 50%;
+            display: block;
+            -o-object-fit: contain;
+            position: absolute;
+            transform: translateX(-50%);
+            z-index: -1000;
+        }
+        #logo {
+            position:fixed;
+            z-index:5;
+            width:100%;
+            height:54px;
+        }
+        #logo img {
+            /*width: 100%;
+            height: 100%;*/
+            -o-object-fit: contain;
+            position: absolute;
+            /*display:none;*/
+        }
+        /*遮罩层样式*/
+        #block_overlay {
+            /*background-color:#808080;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            height: 1000px;
+            filter: alpha(opacity=30);
+            overflow: hidden;*/
+            background-color: #000;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            opacity: 0.5;
+        }
+        /*中间部分*/
+        #content {
+            position: absolute;
+            z-index: 1;
+        }
+
+        #content {
+            width: 100%;
+        }
+        /*文字样式*/
+        .font_overlay {
+            font-size: 5em;
+            color: white;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+
+        .font_overlay1 {
+            font-size: 5em;
+            color: white;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+
+        .font_overlay2 {
+            font-size: 5em;
+            color: white;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+
+        .font_overlay3 {
+            font-size: 5em;
+            color: white;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+
+        .font_overlay4 {
+            font-size: 5em;
+            color: white;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+        /*vido上图片显示隐藏*/
+                .font_overlay2 img{
+            vertical-align:middle;   /*控制图片垂直方向*/           
+        }
+        #jump {
+            width: 100%;
+            height: 100%;
+        }
+
+        .date {
+            text-align: center;
+            width: 100%;
+            height: 90px;
+            line-height: 90px;
+        }
+
+        .jump_link1 {
+            width: 100%;
+            height: 450px;
+            background-image:url("../Image/move/timg.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position:center;
+            cursor:pointer;
+        }
+        .jump_link2 {
+            width: 100%;
+            height: 450px;
+            background-image:url("../Image/move/sing_bg-image.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position:center;
+            cursor:pointer;
+        }
+        .jump_link3 {
+            width: 100%;
+            height: 450px;
+            background-image:url("../Image/move/logan_title.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position:center;
+            cursor:pointer;
+        }
+        .jump_link4 {
+            width: 100%;
+            height: 450px;
+            background-image:url("../Image/move/yhhwd2.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position:center;
+            cursor:pointer;
+        }
+        .jump_link5 {
+            width: 100%;
+            height: 450px;
+            background-image:url("../Image/code/语言背景图/Cshap.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position:center;
+            cursor:pointer;
+        }
+        .jump_link6 {
+            width: 100%;
+            height: 450px;
+            background-image:url("../Image/code/语言背景图/sqlserver.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position:center;
+            cursor:pointer;
+        }
+
+            .jump_img {
+                width: 100%;
+                height: 450px;
+                -o-object-fit: contain;
+                background-size: cover;
+                background-position:center;
+                z-index: 1;
+                position: absolute;
+            }
+
+        .mask1 {
+            background-color: #000;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 450px;
+            opacity: 0.5;
+        }
+        .mask2 {
+            background-color: #000;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 450px;
+            opacity: 0.5;
+        }
+        .mask3 {
+            background-color: #000;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 450px;
+            opacity: 0.5;
+        }
+         .mask4 {
+            background-color: #000;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 450px;
+            opacity: 0.5;
+        }
+         .mask5 {
+            background-color: #000;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 450px;
+            opacity: 0.5;
+        }
+         .mask6 {
+            background-color: #000;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 450px;
+            opacity: 0.5;
+        }
+        .jump_tit {
+            position:absolute;
+            z-index:2;
+            width:100%;
+            text-align:center;
+            margin-top:200px;
+        }
+        .jump_tit_a {
+            font-size:22px;
+            color:#fff;
+        }
+            .jump_tit_time {
+                font-size:16px;
+                color:#fff;
+            }
+            /*页尾*/
+        #foot {
+            margin-top:7%;
+            position:absolute;
+            height:150px;
+            width:100%;
+            background-color:#444;
+            text-align:center;
+        }
+            #foot a {     
+                color:#fff;
+                text-decoration:none;
+                line-height:30px;
+            }
+        #font_a_text {
+            color:#fff;
+            text-decoration:none;
+            margin-top:40px;
+        }
